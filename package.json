@@ -1,0 +1,32 @@
+{
+  "name": "react-cli",
+  "version": "0.0.1",
+  "description": "Cli to create react app and components easily",
+  "main": "cli.js",
+  "scripts": {
+    "mystart": "node react-cli/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TGuillouet/React-cli.git"
+  },
+  "keywords": [
+    "React",
+    "Cli",
+    "npm",
+    "node",
+    "Components"
+  ],
+  "author": "Thomas Guillouët",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TGuillouet/React-cli/issues"
+  },
+  "homepage": "https://github.com/TGuillouet/React-cli#readme",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,1 @@
+var cli = require('./react-cli/cli');
