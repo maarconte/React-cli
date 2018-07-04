@@ -4,7 +4,7 @@
   "description": "Cli to create react app and components easily",
   "main": "cli.js",
   "scripts": {
-    "mystart": "node react-cli/cli.js"
+    "mystart": "node cli.js"
   },
   "repository": {
     "type": "git",
