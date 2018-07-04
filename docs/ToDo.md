@@ -6,3 +6,5 @@
 - Ajouter des clauses dans le config.json
 
 - Créer des fichiers à part pour les templates dans le dossier ``react-cli/templates/*.(jsx|js|test.js|sass|scss|css)`` 
+
+- Utiliser Inquirer: https://github.com/SBoudrias/Inquirer.js/
