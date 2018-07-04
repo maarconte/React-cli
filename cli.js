@@ -8,7 +8,7 @@ program
   .option('-c|--create [value]', 'Create a react component')
   .parse(process.argv);
 
-if (program.create != '') {
+if (typeof program.create != 'undefined') {
   let commands = new Commands(program);
   commands.create();
 }
