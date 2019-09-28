@@ -23,7 +23,7 @@ class Commands {
 
             // Write styles clauses (make a difference with CSS and SASS or SCSS files)
             if (style.ext === "sass" || style.ext === "scss") {
-                fs.appendFileSync(`${stylePath}_imports.${styleExt}`, `@import './src/${componentPath}/${this.program.create}/_${this.program.create}.${style.ext}';\n`);
+                fs.appendFileSync(`${stylePath}_imports.${styleExt}`, `@import '${componentPath}/${this.program.create}/_${this.program.create}.${style.ext}';\n`);
                 fs.writeFileSync(`${componentPath}/${this.program.create}/_${this.program.create}.${styleExt}`, '');
             } else {
                 fs.writeFileSync(`${componentPath}/${this.program.create}/${this.program.create}.css`, '');
