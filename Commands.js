@@ -8,7 +8,7 @@ class Commands {
     }
 
     create() {
-        const { componentPath, stylePath, styleExt } = this.config;
+        const { componentPath, stylePath, styleExt } = this.configFile;
 
         let ReactTemplate = `import React, { Component } from 'react';\n\nexport default class ${this.program.create} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t<h1>Hello world !</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}`;
         let ReactTestTemplate = `import React from 'react';\nimport ReactDOM from 'react-dom';\nimport ${this.program.create} from './${this.program.create}';\n\nit('renders without crashing', () => {\nconst div = document.createElement('div');\nReactDOM.render(<${this.program.create} />, div);\nReactDOM.unmountComponentAtNode(div);\n});`;
@@ -37,7 +37,7 @@ class Commands {
     config() {
         const args = this.program.config.split(',');
         // Parser le config.json
-        const configFile = this.config;
+        const configFile = this.configFile;
         
         args.forEach(arg => {
             const keyVal = arg.split('='); // Récupération de la valeur
