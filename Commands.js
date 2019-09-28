@@ -22,8 +22,8 @@ class Commands {
             fs.writeFileSync(`${componentsPath}/${this.program.create}/${this.program.create}.jsx`, ReactTemplate);
 
             // Write styles clauses (make a difference with CSS and SASS or SCSS files)
-            if (style.ext === "sass" || style.ext === "scss") {
-                fs.appendFileSync(`${stylePath}_imports.${styleExt}`, `@import '${componentsPath}/${this.program.create}/_${this.program.create}.${style.ext}';\n`);
+            if (styleExt === "sass" || styleExt === "scss") {
+                fs.appendFileSync(`${stylePath}_imports.${styleExt}`, `@import '${componentsPath}/${this.program.create}/_${this.program.create}.${styleExt}';\n`);
                 fs.writeFileSync(`${componentsPath}/${this.program.create}/_${this.program.create}.${styleExt}`, '');
             } else {
                 fs.writeFileSync(`${componentsPath}/${this.program.create}/${this.program.create}.css`, '');
