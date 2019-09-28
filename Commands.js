@@ -13,7 +13,7 @@ class Commands {
         let ReactTemplate = `import React, { Component } from 'react';\n\nexport default class ${this.program.create} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t<h1>Hello world !</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}`;
         let ReactTestTemplate = `import React from 'react';\nimport ReactDOM from 'react-dom';\nimport ${this.program.create} from './${this.program.create}';\n\nit('renders without crashing', () => {\nconst div = document.createElement('div');\nReactDOM.render(<${this.program.create} />, div);\nReactDOM.unmountComponentAtNode(div);\n});`;
 
-        mkdirp(`./src/${componentsPath}/${this.program.create}`, (e) => {
+        mkdirp(`${componentsPath}/${this.program.create}`, (e) => {
             if (e) throw new Error(e);
         });
 
