@@ -1,7 +1,1 @@
-{
-    "path": "components" ,
-    "style": {
-        "ext": "scss",
-        "path": ""
-    }
-}
+{"path":"components","styleExt":"scss","stylePath":""}
