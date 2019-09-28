@@ -10,12 +10,10 @@ program
   .parse(process.argv);
 
 /* Define actions of each command */
-if (program.create !== true && typeof program.create !== 'undefined') {
-  const commands = new Commands(program);
+const commands = new Commands(program);
+if (program.create) {
   commands.create();
 }
-
-if (program.config !== true && typeof program.config !== 'undefined') {
-  const commands = new Commands(program);
+if (program.config) {
   commands.config();
 }
