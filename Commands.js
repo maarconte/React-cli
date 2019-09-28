@@ -4,7 +4,7 @@ var mkdirp = require('mkdirp');
 class Commands {
     constructor(program) {
         this.program = program;
-        this.config = JSON.parse(fs.readFileSync("./rcli-config.json").toString());
+        this.configFile = JSON.parse(fs.readFileSync("./rcli-config.json").toString());
     }
 
     create() {
