@@ -1,9 +1,9 @@
 # React-cli
 
 ## Installation
-``yarn global add https://github.com/TGuillouet/React-cli.git``\
+``yarn global add https://github.com/maarconte/React-cli.git``\
 ou\
-``npm install -g https://github.com/TGuillouet/React-cli.git``
+``npm install -g https://github.com/maarconte/React-cli.git``
 
 ## Usage
 Ajoutez un fichier nommé `rcli-config.json` à la racine de votre projet
